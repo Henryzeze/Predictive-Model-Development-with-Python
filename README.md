@@ -33,8 +33,8 @@ The linear function is represented by:
 $$
 Yhat = a + b  X
 $$
-.
 
+.
 **a:** It denotes the intercept of the regression line, signifying the value of Y when X equals 0.
 
 **b:** It denotes the slope of the regression line, illustrating how Y changes as X increases by 1 unit.
@@ -50,8 +50,8 @@ A final linear model with the structure:
 $$
 Yhat = a + b  X
 $$
-.
 
+.
 Plugging in the actual values gives:
 
 **Price** = 38423.31 - 821.73 x **highway-mpg**
@@ -85,8 +85,8 @@ A final linear function with the structure:
 $$
 Yhat = a + b_1 X_1 + b_2 X_2 + b_3 X_3 + b_4 X_4
 $$
-.
 
+.
 Plugging in the actual values gives:
 
 **Price** = -15678.742628061467 + 52.65851272 x **horsepower** + 4.69878948 x **curb-weight** + 81.95906216 x **engine-size** + 33.58258185 x **highway-mpg**
