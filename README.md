@@ -262,23 +262,24 @@ Let's examine the values obtained for different models:
 
 Simple Linear Regression (SLR): Highway-mpg as Predictor Variable of Price.
 
-R-squared: 0.
+1. R-squared: 0.
 
-MSE: 3.16 x 10^7
+2. MSE: 3.16 x 10^7
 
 Multiple Linear Regression (MLR): Using Horsepower, Curb-weight, Engine-size, and Highway-mpg as Predictor Variables of Price.
 
-R-squared: 0.80896354913783497
+1. R-squared: 0.80896354913783497
 
-MSE: 1.2 x 10^7
+2. MSE: 1.2 x 10^7
 
 Polynomial Fit: Using Highway-mpg as Predictor Variable of Price.
 
-R-squared: 0.6741946663906514
+1. R-squared: 0.6741946663906514
 
-MSE: 2.05 x 10^7
+2. MSE: 2.05 x 10^7
 
-SLR vs. MLR
+
+**SLR vs. MLR**
 
 While more variables often enhance prediction, it's not a universal truth. Factors like insufficient data or noisy variables may influence model performance. Checking MSE and R-squared is crucial.
 
@@ -288,7 +289,8 @@ Comparison: SLR vs. MLR
 - R-squared: MLR's R-squared (~0.809) is significantly higher than SLR's (~0.497).
 - MLR, with a lower MSE and higher R-squared, seems to be a superior fit compared to SLR.
 
-SLR vs. Polynomial Fit
+
+**SLR vs. Polynomial Fit**
 
 Comparison: SLR vs. Polynomial Fit
 
@@ -296,12 +298,14 @@ Comparison: SLR vs. Polynomial Fit
 - R-squared: Polynomial Fit's R-squared is higher than SLR's.
 - Polynomial Fit's lower MSE and higher R-squared make it a better model for predicting "price" with "highway-mpg" as a predictor variable.
 
-MLR vs. Polynomial Fit
+
+**MLR vs. Polynomial Fit**
 
 Comparison: MLR vs. Polynomial Fit
 
 - MSE: MLR's MSE is smaller than Polynomial Fit's.
 - R-squared: MLR's R-squared is significantly larger than Polynomial Fit's.
+
 
 ## Conclusion
 
