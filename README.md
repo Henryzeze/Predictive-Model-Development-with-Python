@@ -105,7 +105,7 @@ These plots depict scattered data points (scatterplot) and the linear regression
 
 Let's visualize how highway-mpg potentially predicts car prices:
 
-1[](plot1.png)
+![](plot1.png)
 
 From this plot, it's evident that price exhibits a negative correlation with highway-mpg as the regression slope is negative.
 
@@ -163,13 +163,13 @@ $$
 Yhat = a + b_1 X +b_2 X^2 
 $$
 
-
+.
 <center><b>Cubic - 3rd Order</b></center>
 $$
 Yhat = a + b_1 X +b_2 X^2 +b_3 X^3\\\\
 $$
 
-
+.
 <center><b>Higher-Order</b>:</center>
 $$
 Y = a + b_1 X +b_2 X^2 +b_3 X^3 ....\\
@@ -229,11 +229,88 @@ R-squared, or the coefficient of determination gauges the proximity of the data 
 
 The Mean Squared Error calculates the average of the squared differences between the actual value (y) and the estimated value (ŷ). It offers insights into the average squared deviation between predicted and observed values.
 
-Below are screenshots on how R-squared (R^2) and where calculated on the various models
+Below are screenshots of how R-squared (R^2) and where calculated on the various models
 
 ![](Capture4.JPG)
 
 ![](Capture5.JPG)
 
-![]()
+![](Capture6.JPG)
+
+### Prediction and Decision Making
+
+**Prediction**
+
+In the earlier section, we trained the model using the 'fit' method. Now, we'll utilize the 'predict' method to generate a prediction. To facilitate plotting, we'll import 'pyplot' for visualization and use certain functions from 'numpy'.
+
+Started by creating a new input, fitting the model, Producing a prediction, and plotting the data.
+
+![](Capture7.JPG)
+
+![](plot6.png)
+
+### Decision Making
+
+After visualizing different models and computing R-squared and MSE values for the fits, its time to evaluate and select a good model fit.
+
+- For comparing models, the one with a higher R-squared is considered a better fit for the data.
+- Lower MSE values indicate better model fits when comparing different models.
+
+**Analysis of Model Results**
+
+Let's examine the values obtained for different models:
+
+Simple Linear Regression (SLR): Highway-mpg as Predictor Variable of Price.
+
+R-squared: 0.
+
+MSE: 3.16 x 10^7
+
+Multiple Linear Regression (MLR): Using Horsepower, Curb-weight, Engine-size, and Highway-mpg as Predictor Variables of Price.
+
+R-squared: 0.80896354913783497
+
+MSE: 1.2 x 10^7
+
+Polynomial Fit: Using Highway-mpg as Predictor Variable of Price.
+
+R-squared: 0.6741946663906514
+
+MSE: 2.05 x 10^7
+
+SLR vs. MLR
+
+While more variables often enhance prediction, it's not a universal truth. Factors like insufficient data or noisy variables may influence model performance. Checking MSE and R-squared is crucial.
+
+Comparison: SLR vs. MLR
+
+- MSE: SLR's MSE (3.16x10^7) is higher than MLR's (1.2x10^7). MLR has a smaller MSE.
+- R-squared: MLR's R-squared (~0.809) is significantly higher than SLR's (~0.497).
+- MLR, with a lower MSE and higher R-squared, seems to be a superior fit compared to SLR.
+
+SLR vs. Polynomial Fit
+
+Comparison: SLR vs. Polynomial Fit
+
+- MSE: Polynomial Fit's MSE is smaller than SLR's.
+- R-squared: Polynomial Fit's R-squared is higher than SLR's.
+- Polynomial Fit's lower MSE and higher R-squared make it a better model for predicting "price" with "highway-mpg" as a predictor variable.
+
+MLR vs. Polynomial Fit
+
+Comparison: MLR vs. Polynomial Fit
+
+- MSE: MLR's MSE is smaller than Polynomial Fit's.
+- R-squared: MLR's R-squared is significantly larger than Polynomial Fit's.
+
+## Conclusion
+
+After comparing the three models, the analysis indicates that the Multiple Linear Regression (MLR) model stands out as the most effective in predicting car prices from our dataset. This conclusion aligns with the nature of our dataset, which comprises 27 variables, several of which hold potential as predictors for the ultimate car price.
+
+
+
+
+
+
+
 
