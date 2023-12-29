@@ -1,6 +1,6 @@
 # Predictive-Model-Development-with-Python
 
-
+![](Predictive_Analysis.jpg)
 
 **Note:** ***This is a followup on my github repository ["Exploratory Data Analysis with Python"](https://github.com/Henryzeze/Exploratory-Data-Analysis-with-Python)***
 
